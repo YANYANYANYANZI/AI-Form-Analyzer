@@ -31,6 +31,10 @@ def main():
         st.markdown("---")
         st.info("架构特性：防腐层隔离 | 智能路由 | 沙箱执行 | 全量兜底")
 
+        st.markdown("---")
+        st.caption("👨‍💻 Author: @YANYANYANYANZI（LeronSterYoung）")
+        st.markdown("[⭐ 访问 GitHub 开源仓库](https://github.com/YANYANYANYANZI/AI-Form-Analyzer.git)")
+        
     col1, col2 = st.columns([1, 1])
 
     with col1:
