@@ -1,7 +1,7 @@
-# 📊 AI Form Analyzer (Agentic 企业级数据分析终端)
+# 📊 AI Form Analyzer (Agentic 数据分析终端)
 🐍 Python 3.10+ | 🎈 Streamlit 1.32 | ✅ Pytest Passing | 🧩 Agentic 架构
 
-一个基于 LLM (如 DeepSeek) 的企业级自动化数据分析与可视化终端。本项目非简单的“API套壳”，而是完整实现了一套具备**防腐隔离、多维路由、沙箱自愈、读写分离状态机**的工业级 Agent 系统。
+一个基于 LLM (如 DeepSeek) 的自动化数据分析与可视化终端。本项目完整实现了一套具备**防腐隔离、多维路由、沙箱自愈、读写分离状态机**的工业级 Agent 系统。
 
 # ⚠️ 免责声明 (Disclaimer)
 本项目（AI Form Analyzer）为个人学习研究用途开发并开源，仅作为技术参考素材，不构成任何商业使用指导、承诺或担保。
