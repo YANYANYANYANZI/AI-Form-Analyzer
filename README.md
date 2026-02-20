@@ -21,7 +21,7 @@
 
 ### 0. 环境安装
 ```bash
-git clone [https://github.com/your-username/ai-form-analyzer.git](https://github.com/your-username/ai-form-analyzer.git)
+git clone [[https://github.com/your-username/ai-form-analyzer.git](https://github.com/your-username/ai-form-analyzer.git](https://github.com/YANYANYANYANZI/AI-Form-Analyzer.git))
 cd ai-form-analyzer
 pip install -r requirements.txt
 ```
