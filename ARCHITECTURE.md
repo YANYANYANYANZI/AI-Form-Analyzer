@@ -16,7 +16,7 @@ graph TD
     UI -- "1. 提问与上传数据" --> Router[Semantic Router 多维语义路由]
     
     %% 核心 Agent 处理层
-    subgraph Agentic Engine (analyzer.py)
+    subgraph Agentic_Engine [Agentic Engine - analyzer.py]
         Router -- "CHAT" --> LLM_Chat[通用问答模块]
         Router -- "DATA_OP / PLOT" --> RAG[(ChromaDB 业务规则库)]
         RAG -- "注入红线与口径" --> PromptGen[Prompt 生成器]
@@ -27,12 +27,12 @@ graph TD
     %% 执行与自愈层
     AST -- "验证通过" --> Exec[受控 Python 执行环境]
     AST -- "恶意代码" --> Reject[阻断执行]
-    Exec -- "抛出异常 Traceback" --> Reflection[Self-Reflection 反思重试 (Max 3)]
+    Exec -- "抛出异常 Traceback" --> Reflection[Self-Reflection 反思重试 Max 3]
     Reflection --> LLM
-    Reflection -. "彻底失败 (降级)" .-> Fallback[硬编码图表兜底引擎]
+    Reflection -. "彻底失败降级" .-> Fallback[硬编码图表兜底引擎]
 
     %% 数据状态机层
-    subgraph 数据状态机 (Data State Machine)
+    subgraph Data_State_Machine [数据状态机 - Data State Machine]
         Exec -- "生成 result_df" --> ViewMode(只读视图: 安全展示)
         Exec -- "生成 update_df" --> UpdateMode(覆写模式: 更新全局底表)
     end
