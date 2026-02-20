@@ -41,7 +41,9 @@ python generate_mock_data.py
 ```Bash
 python run.py
 ```
-启动后，在左侧边栏输入你的大模型 API Key，即可开始体验。项目内置了测试数据，位于 data/ 目录下。
+
+启动后，在左侧边栏输入你的**大模型（DeepSeek） API Key**，即可开始体验。项目内置了测试数据，位于 data/ 目录下。
+---
 
 🧪 工业级测试体系
 本项目包含完整的 Pytest 测试套件，覆盖了工具类解析、路由容错与沙箱恶意代码拦截。
